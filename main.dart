@@ -33,9 +33,6 @@ class _MyAppState extends State<MyApp> {
               child: Text("Something went wrong"),
             );
           }
-          else if (snapshot.data == null) {
-            return const signup();
-          }
           else {
             return const signup();
           }
