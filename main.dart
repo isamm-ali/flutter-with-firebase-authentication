@@ -32,6 +32,8 @@ class _MyAppState extends State<MyApp> {
             return const Center(
               child: Text("Something went wrong"),
             );
+          }else if (snapshot.hasData) {
+            return const homescreen();
           }
           else {
             return const signup();
